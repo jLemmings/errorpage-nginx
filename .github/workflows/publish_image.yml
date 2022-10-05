@@ -10,8 +10,8 @@
 name: Publish Docker image
 
 on:
-  release:
-    types: [published]
+  push:
+    branches: ["main"]
 
 jobs:
   push_to_registries:
@@ -35,7 +35,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.TOKEN }}
       
       - name: Extract metadata (tags, labels) for Docker
         id: meta
