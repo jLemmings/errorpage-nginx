@@ -4,6 +4,7 @@ body {
   }
   
 .fix{
+    max-width: 90%;
     max-height: 80%;
     position:fixed;
     bottom: 0px;
