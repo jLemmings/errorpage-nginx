@@ -14,10 +14,10 @@ body {
   display: block;
   width: min(104vw, 820px);
   max-height: 58vh;
-  margin-top: auto;
   object-fit: contain;
   object-position: bottom center;
-  position: relative;
+  position: fixed;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
 }
